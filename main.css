@@ -177,3 +177,27 @@ clear:none;
 .osx b, .osx strong {
   font-weight: 500;
 }
+
+.button-grid {
+    display: grid;
+    /* This creates 3 equal columns */
+    grid-template-columns: repeat(3, 1fr); 
+    /* Spacing between the buttons */
+    gap: 15px; 
+    /* Adjust width as needed for your Mac Pro screen resolution */
+    max-width: 800px; 
+    margin: 20px 0;
+}
+
+/* Optional: Makes buttons fill the grid cell */
+.button-grid .osx {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Responsive: Stacks buttons on small screens/mobile */
+@media (max-width: 600px) {
+    .button-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
