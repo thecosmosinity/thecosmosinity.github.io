@@ -1,48 +1,52 @@
 <!DOCTYPE HTML>
-
-<link rel="stylesheet" href="main.css">
-<link rel="icon" href="static/useful/icon.png" type="image/png">
-<title>hello</title>
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="static/useful/icon.png" type="image/png">
+    <title>midnight's hub // hello</title>
+    <style>
+        body { background: #0a0a0a; color: #ececec; font-family: 'Consolas', monospace; }
+        .hero-img { float: right; margin: 0 0 20px 20px; filter: drop-shadow(0 0 10px #4ade80); }
+        h1 { color: #4ade80; text-transform: uppercase; letter-spacing: -2px; }
+        .warning-text { color: #ff4444; font-weight: bold; border: 1px dashed #ff4444; padding: 10px; display: inline-block; margin: 10px 0; }
+        .button-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 10px; margin-top: 30px; }
+        progress { width: 100%; height: 5px; }
+    </style>
+</head>
 <body>
+    <img src="img/saesmoke.png" alt="Logo" width="340" height="340" class="hero-img">
 
-        <img src="img/saesmoke.png" alt="Logo" width="340" height="340" style="float: right; margin: 0 0 10px 10px">
+    <h1>> hello c:</h1>
+    <h3>Last Manual Override: 01-02-2026</h3>
 
-    <h1>hello</h1>
-    <h3>last updated 01-02-2026</h3>
-    <a> don't message for updates, i update on my own basis when i have the time</a>
+    <div class="warning-text">
+        ⚠️ ALERT: DON'T MESSAGE FOR UPDATES. I do this when I have time and/or enough sleep.
+    </div>
+
+    <p>
+        If you want something added, you'd better be ready to provide some starter code or I'm ignoring the email. 
+        This site is literally just a dumping ground for my "stupid" projects and testing scripts.
+    </p>
+
+    <div class="button-grid">
+        <a href="p2chat.html"><button class="osx">🔒 P2CHAT</button></a>
+        <a href="webcam.html"><button class="osx">📸 WEBCAM TEST</button></a>
+        <a href="mictest.html"><button class="osx">🎤 MIC TEST</button></a>
+        <a href="keytest.html"><button class="osx">⌨️ KEYBOARD TEST</button></a>
+        <a href="pixel.html"><button class="osx">📺 DEAD PIXEL TEST</button></a>
+        <a href="guides.html"><button class="osx">📖 VIEW GUIDES</button></a>
+        <a href="redirects.html"><button class="osx">🔗 SOCIALS</button></a>
+        <a href="credits.html"><button class="osx">📜 CREDITS</button></a>
+        <a href="https://github.com/thecosmosinity"><button class="osx">💾 VIEW SOURCE</button></a>
+    </div>
+
     <br>
-    <a>ONLY MESSAGE IF YOU WANT SOMETHING ADDED, AND IF YOU'RE WILLING TO ATLEAST GIVE ME A START WITH THE CODE!</a>
-    <p>this website is LITERALLY just for stupid stuff i do, and some testing here and there....</p>
-    <p>nothing here is guarenteed, if something breaks email me @ cosmosinity@gmail.com</p>
-    <p>i have mentioned credits for ALL the rightful owners in the credits page, message me at the email if you didnt get credits</p>
-
-
-<div class="button-grid">
-    <a href="webcam.html"><button class="osx">webcam testing</button></a>
-    <a href="mictest.html"><button class="osx">mic testing</button></a>
-    <a href="keytest.html"><button class="osx">keyboard testing</button></a>
-    <a href="pixel.html"><button class="osx">dead pixel tester</button></a>
-    <a href="credits.html"><button class="osx">CREDITS!</button></a>
-    <a href="https://github.com/thecosmosinity/thecosmosinity.github.io"><button class="osx">view source code</button></a>
-    <a href="guides.html"><button class="osx">view guides</button></a>
-    <a href="https://thecosmosinity.github.io/repo/"><button class="osx">cydia repo</button></a>
-    <a href="redirects.html"><button class="osx">redirects</button></a>
-</div>
-
-    <!-- NO CODE UNDER THIS LINE!!! IT WILL BREAK THE FOOTER!!!-->
-
-    <canvas>padding</canvas>
-    <br>
-    <progress>99999999999999999999999999</progress>
-
+    <progress value="99" max="100"></progress>
 
     <footer>
-
-        <a href="about-me.html"  class="osx round single">?</a> 
+        <a href="about-me.html" class="osx round single">?</a> 
         <address>midnight's testing server(s)</address>
     </footer>
-
 </body>
-
-
+</html>
