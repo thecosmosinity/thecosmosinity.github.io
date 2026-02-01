@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p2chat | Secure. Private. No BS.</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="static/useful/icon.png" type="image/png">
+    <style>
+        :root {
+            --bg: #0f0f0f;
+            --panel: #161616;
+            --accent: #007acc;
+            --text: #ececec;
+            --safety: #4ade80;
+            --warn: #ff4444;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 850px;
+            width: 100%;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .logo {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--safety);
+            letter-spacing: -2px;
+            font-family: 'Consolas', monospace;
+        }
+        .tagline {
+            font-size: 1.4rem;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        /* FEATURES section */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .card {
+            background: var(--panel);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            transition: border-color 0.3s;
+        }
+        .card:hover { border-color: var(--accent); }
+        .card h3 { color: var(--safety); margin-top: 0; }
+        .card p { color: #bbb; font-size: 0.95rem; }
+
+        /* THE WARNING section */
+        .warning-box {
+            background: #1a1010;
+            padding: 35px;
+            border-radius: 12px;
+            border: 2px dashed var(--warn);
+            margin: 50px 0;
+        }
+        .warning-box h2 {
+            color: var(--warn);
+            margin-top: 0;
+            font-family: 'Consolas', monospace;
+            text-transform: uppercase;
+        }
+        .tax-list {
+            margin: 20px 0;
+            padding-left: 20px;
+            border-left: 3px solid #333;
+        }
+        .tax-item { margin-bottom: 10px; font-size: 1.1rem; }
+        .price { color: var(--warn); font-weight: bold; background: rgba(255,68,68,0.1); padding: 0 5px; }
+
+        /* FOOTER / DOWNLOAD */
+        .action-area {
+            text-align: center;
+            background: linear-gradient(180deg, var(--bg) 0%, var(--panel) 100%);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid #222;
+        }
+        .btn {
+            background: var(--accent);
+            color: white;
+            padding: 20px 45px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            display: inline-block;
+            box-shadow: 0 4px 15px rgba(0, 122, 204, 0.3);
+            transition: 0.2s;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            background: #008fff;
+        }
+        .subtext {
+            margin-top: 20px;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        code { color: var(--safety); background: #000; padding: 2px 6px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="logo">p2chat</div>
+        <div class="tagline">Encrypted local network messaging for people who value privacy over polish.</div>
+    </header>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Direct Tunneling</h3>
+            <p>We don't use servers. Your messages don't go to a data center in Cuba, they go directly to the person sitting across the room via <code>TCP</code> and <code>UDP</code>.</p>
+        </div>
+        <div class="card">
+            <h3>Hardcore Encryption</h3>
+            <p>Every single packet is locked with <strong>AES-256 GCM</strong>. If someone tries to sniff your Wi-Fi, they'll see absolutely nothing but digital noise.</p>
+        </div>
+        <div class="card">
+            <h3>Zero Paper Trail</h3>
+            <p>No phone numbers. No emails. No "Sign in with Google." Just pick a name and start talking. We don't track you because we literally can't.</p>
+        </div>
+        <div class="card">
+            <h3>Real Group Chats</h3>
+            <p>Encrypted local broadcasts allow you to talk to everyone at once without sacrificing security. Perfect for projects, gaming, or just staying off the grid.</p>
+        </div>
+    </div>
+
+    
+
+    <div class="warning-box">
+        <h2>🚨 The "Windows Defender" Problem</h2>
+        <p>
+            When you run <code>p2chat.exe</code>, Windows will likely throw a huge "SmartScreen" warning. 
+            Before you panic, here is the <strong>Real Talk</strong> on how the software industry works:
+        </p>
+
+        <div class="tax-list">
+            <div class="tax-item">1. Microsoft forces developers to pay a <strong>"Microsoft Tax"</strong> to be "trusted."</div>
+            <div class="tax-item">2. A digital signature for this app costs <span class="price">over $400 USD every single year.</span></div>
+            <div class="tax-item">3. p2chat is free. We make $0. We have no ads. We don't sell your data.</div>
+        </div>
+
+        <p>
+            Paying $400/year to a trillion-dollar corporation just to make a blue box disappear is <span class="price">INSANE</span> for an open-source project. 
+            We'd rather keep the app free and the code transparent. 
+        </p>
+        <p>
+            <strong>Don't trust us? Read the code.</strong> Since it's on GitHub, you can verify every single line of the 1-on-1 and Group Chat logic yourself. 
+        </p>
+    </div>
+
+    
+
+    <div class="action-area">
+        <a href="https://github.com/thecosmosinity/p2chat/" class="btn">
+            Grab the Source on GitHub
+        </a>
+        <div class="subtext">
+            Currently built for Windows. Open Source. Peer-to-Peer. No Corporate BS.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
